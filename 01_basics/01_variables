@@ -1,0 +1,11 @@
+const accountId = 123;
+let   accountName = 'khan';
+var   bankLocation = 'peshawar'
+ 
+/*    
+there are three type of variables in javascripit .
+1 const is a block scoped variable which can not reassigned.this can be a number or string.
+2 var is the scoped base variable and it can be a number or string.
+3 let is a block scoped variable and this can be number or string. */
+
+console.table([accountId,accountName,bankLocation])
