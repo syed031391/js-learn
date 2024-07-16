@@ -9,3 +9,4 @@ there are three type of variables in javascripit .
 3 let is a block scoped variable and this can be number or string. */
 
 console.table([accountId,accountName,bankLocation])
+
