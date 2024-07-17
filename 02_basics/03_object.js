@@ -9,5 +9,4 @@ const jsUser = {
 {
     console.log(`hello js user ${this.name}`)
 }
-
-console.log(jsUser.greeting())
+  console.log(jsUser.greeting()) 
