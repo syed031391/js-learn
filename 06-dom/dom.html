@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h1 id="mylist">Dom practice </h1>
+    <p id="myp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatem id! Cumque </p>
+    <ul id="ul">
+        <li id="l1">monday</li>
+        <li id="l2">theusday</li>
+        <li id="l3">wednesday</li>
+        <li id="l4">thrusday</li>
+    
+    </ul>
+</body>
+<script>
+   let myTitle = document.getElementById("mylist");
+   myTitle.style.color ="green";
+   myTitle.style.padding="10px";
+   let myParaghrap = document.getElementById("myp");
+   myParaghrap.style.color="green"
+   myParaghrap.style.padding="10px"
+  let l1 = document.getElementById("l1")
+  let l2 = document.getElementById("l2")
+  let l3 = document.getElementById("l3")
+  let l4 = document.getElementById("l4")
+  l1.style.color="orange"
+  l2.style.color="green"
+  l3.style.color="blue"
+  l4.style.color="pink"
+ let ul = document.getElementById("ul");
+ let newLi = document.createElement("li")
+ newLi.textContent="i am created by javasripit dom"
+ ul.appendChild(newLi)
+ console.log(ul)
+  
+
+  
+</script>
+</html>
