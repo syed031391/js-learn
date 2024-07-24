@@ -74,6 +74,7 @@ function endGame() {
   startOver.appendChild(p);
   playGame = false;
   newGame();
+  
 }
 
 function newGame() {
