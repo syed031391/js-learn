@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: gray;">
+  <div id="outerDiv" style="border: 2px solid red; padding: 20px; color: aliceblue;">
+    Outer Div
+    <div id="innerDiv" style="border: 2px solid blue; padding: 20px; color: aliceblue;">
+      Inner Div
+    </div>
+  </div>
+
+  <script>
+    // Event propagation is opposite of event babbling it start from root and come down to the target element.
+    document.getElementById('outerDiv').addEventListener('click', function() {
+      console.log('Outer Div Clicked!');
+    }, true); // Capture phase
+
+    document.getElementById('innerDiv').addEventListener('click', function() {
+      console.log('Inner Div Clicked!');
+    });
+  </script>
+</body>
+</html>
+ 
