@@ -9,6 +9,9 @@
           <p>outer Diviv</p>
         <div id="innerDiv" style="border: 2px solid blue; padding: 20px; color: aliceblue;">
            <p>Inner Div</p>
+           <div id="mostDiv" style="border: 2px solid rgb(0, 255, 55); padding: 20px; color: aliceblue;">
+            <p>Monst Inner Div</p>
+         </div>
         </div>
     </div>
 </body>
@@ -19,6 +22,9 @@
     })
     document.querySelector("#innerDiv").addEventListener("click" , (e)=>{
         console.log("Inner Div clicked")
+    })
+    document.querySelector("#mostDiv").addEventListener("click" , (e)=>{
+        console.log("most Div clicked")
     })
 </script>
 </html>
