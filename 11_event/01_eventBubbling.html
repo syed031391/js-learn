@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubbling</title>
+</head>
+<body style="background-color: 414141;">
+    <div id="outerDiv" style="border: 2px solid red; padding: 20px; color: aliceblue;">
+          <p>outer Diviv</p>
+        <div id="innerDiv" style="border: 2px solid blue; padding: 20px; color: aliceblue;">
+           <p>Inner Div</p>
+        </div>
+    </div>
+</body>
+<script>
+    // Bubble event move up the dom hierarchy mean move up like bable and reach to the root of the document.
+    document.querySelector("#outerDiv").addEventListener("click" , (e)=>{
+      console.log("Outer Div clicked")
+    })
+    document.querySelector("#innerDiv").addEventListener("click" , (e)=>{
+        console.log("Inner Div clicked")
+    })
+</script>
+</html>
